@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KITS SMART AGRICULTURAL & ORGANIC FARMING Portal</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'] },
+          colors: {
+            agrigreen: {
+              50: '#f0fdf4', 100: '#dcfce7', 200: '#bbf7d0',
+              500: '#22c55e', 600: '#16a34a', 700: '#15803d',
+              800: '#166534', 900: '#14532d', 950: '#052e16'
+            },
+            harvest: { 50: '#fefce8', 100: '#fef9c3', 700: '#a16207' }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-[#f8faf8] text-slate-800 antialiased font-sans pb-12">
+
+  <!-- Top Bar -->
+  <header class="sticky top-0 z-50 bg-white border-b border-slate-200 shadow-sm">
+   
+
+    <!-- Main Navigation Header -->
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#" class="flex items-center space-x-3">
+        <img src="logo.jpg" alt="KITS Logo" class="h-10 w-auto object-contain" />
+        <div>
+          <h1 class="text-base font-extrabold text-agrigreen-950 tracking-tight">KITS SMART AGRICULTURAL & ORGANIC FARMING</h1>
+          <p class="text-[11px] text-slate-500 font-medium">Nandapuri Grampanchayat Community Initiative</p>
+        </div>
+      </a>
+
+      <!-- Quick Nav -->
+      <nav class="hidden md:flex items-center space-x-4 text-xs font-semibold text-slate-700">
+        <a href="#about" class="hover:text-agrigreen-700">Smart Ag</a>
+        <a href="#steps" class="hover:text-agrigreen-700">7 Easy Steps</a>
+        <a href="#toolkit" class="hover:text-agrigreen-700">Agri Toolkit</a>
+        <a href="#plantix" class="hover:text-agrigreen-700">Plantix Doctor</a>
+        <a href="#organic" class="hover:text-agrigreen-700">Organic Farming</a>
+        <a href="#schemes" class="hover:text-agrigreen-700">Government Schemes</a>
+        <a href="#team" class="hover:text-agrigreen-700">Project Team</a>
+
+        <!-- Quick Nav -->
+<nav class="hidden md:flex items-center space-x-4 text-xs font-semibold text-slate-700">
+
+  <!-- Language Selector -->
+<div class="relative ml-4">
+  <button
+    id="languageBtn"
+    onclick="toggleLanguageMenu()"
+    class="flex items-center gap-2 px-3 py-2 rounded-lg border border-slate-200 bg-white text-xs font-semibold text-slate-700 hover:border-agrigreen-500 hover:text-agrigreen-700 transition"
+  >
+    🌐 <span>Language</span>
+  </button>
+
+  <div
+    id="languageMenu"
+    class="hidden absolute right-0 mt-2 w-40 bg-white border border-slate-200 rounded-xl shadow-lg p-2 z-50"
+  >
+    <button onclick="changeLanguage('en')" class="language-option">
+      🇬🇧 English
+    </button>
+
+    <button onclick="changeLanguage('hi')" class="language-option">
+      🇮🇳 हिंदी
+    </button>
+
+    <button onclick="changeLanguage('mr')" class="language-option">
+      🇮🇳 मराठी
+    </button>
+  </div>
+</div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 space-y-12 mt-6">
+
+    <!-- Banner & Team Section -->
+    <section id="team" class="bg-emerald-50/50 rounded-2xl p-6 border border-emerald-100 text-center">
+      <div class="flex items-center justify-center gap-3 mb-2">
+        <img src="logo.jpg" alt="Logo" class="w-20 h-20 object-contain" />
+        <h2 class="text-xl font-bold text-agrigreen-950">KAVIKULGURU INSTITUTE OF TECHNOLOGY AND SCIENCE RAMTEK </BR>SMART AGRICULTURAL & ORGANIC FARMING PORTAL-Session (2026-27)</h2>
+      </div>
+      <div class="bg-emerald-100/60 rounded-xl p-3 mb-6">
+        <h3 class="text-base font-bold text-agrigreen-900">NANDAPURI GRAMPANCHAYAT - Organic Farming</h3>
+        <p class="text-xs text-slate-700 mt-1">Kavikulguru Institute of Technology and Science, Ramtek (UGC Autonomous)</p>
+        <p class="text-xs text-slate-600">Department of Electronics and Computer Science <BR>
+           Under the Community Engagement Project</p>
+      </div>
+
+      <div class="max-w-3xl mx-auto space-y-6">
+        <div>
+          <h4 class="text-sm font-bold text-slate-800 uppercase tracking-wide mb-3">HOD of (Electronics and Computer Science)</h4>
+          <div class="bg-white border border-slate-200 rounded-xl p-3 max-w-sm mx-auto flex items-center gap-3 shadow-xs">
+            <img src="img01.jpg" alt="pa sir" class="w-14 h-16 object-cover rounded border" />
+            <div class="text-left">
+              <h5 class="text-sm font-bold text-slate-900">Dr. Pankaj S. Ashtankar </h5>
+              <p class="text-xs text-slate-500"> B.E, M.Tech and Ph.D</p>
+              <p class="text-xs text-slate-500">Professor and Head Dean (Student Activities), KITS Ramtek</p>
+            </div>
+          </div>
+        </div>
+
+         <div class="max-w-3xl mx-auto space-y-6">
+        <div>
+          <h4 class="text-sm font-bold text-slate-800 uppercase tracking-wide mb-3">Under the Guidance of</h4>
+          <div class="bg-white border border-slate-200 rounded-xl p-3 max-w-sm mx-auto flex items-center gap-3 shadow-xs">
+            <img src="img1.jpg" alt="Anjali Narad Mam" class="w-14 h-16 object-cover rounded border" />
+            <div class="text-left">
+              <h5 class="text-sm font-bold text-slate-900">MRS. Anjali Narad </h5>
+              <p class="text-xs text-slate-500">M. Arch, Ph.D (Pursuing)</p>
+              <p class="text-xs text-slate-500">Assistant Professor, KITS Ramtek</p>
+            </div>
+          </div>
+        </div>
+
+
+         
+        <div>
+  <h4 class="text-sm font-bold text-slate-800 uppercase tracking-wide mb-3">
+    Group Members
+  </h4>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
+
+    <!-- Member 1 -->
+    <div class="bg-white border border-slate-200 rounded-xl p-4 flex items-center gap-4 shadow-sm">
+      <img
+        src="img2.jpg"
+        alt="Varun Hedau"
+        class="w-16 h-20 object-cover rounded-lg border"
+      />
+      <div class="text-left">
+        <h5 class="text-sm font-bold text-slate-900">
+          Mr. Varun Hedau
+        </h5>
+        <p class="text-xs text-slate-500 mt-1">ES25057</p>
+      </div>
+    </div>
+
+    <!-- Member 2 -->
+    <div class="bg-white border border-slate-200 rounded-xl p-4 flex items-center gap-4 shadow-sm">
+      <img
+        src="img3.jpg"
+        alt="Rohit Dighore"
+        class="w-16 h-20 object-cover rounded-lg border"
+      />
+      <div class="text-left">
+        <h5 class="text-sm font-bold text-slate-900">
+          Mr. Rohit Dighore
+        </h5>
+        <p class="text-xs text-slate-500 mt-1">ES25052</p>
+      </div>
+    </div>
+
+    <!-- Member 3 -->
+    <div class="bg-white border border-slate-200 rounded-xl p-4 flex items-center gap-4 shadow-sm">
+      <img
+        src="img4.jpg"
+        alt="Himanshu Shende"
+        class="w-16 h-20 object-cover rounded-lg border"
+      />
+      <div class="text-left">
+        <h5 class="text-sm font-bold text-slate-900">
+          Mr. Himanshu Shende
+        </h5>
+        <p class="text-xs text-slate-500 mt-1">ES25021</p>
+      </div>
+    </div>
+
+    <!-- Member 4 -->
+    <div class="bg-white border border-slate-200 rounded-xl p-4 flex items-center gap-4 shadow-sm">
+      <img
+        src="img5.jpg"
+        alt="Om Kharwade"
+        class="w-16 h-20 object-cover rounded-lg border"
+      />
+      <div class="text-left">
+        <h5 class="text-sm font-bold text-slate-900">
+          Mr. Om Kharwade
+        </h5>
+        <p class="text-xs text-slate-500 mt-1">ES25048</p>
+      </div>
+    </div>
+
+
+     <div class="bg-white border border-slate-200 rounded-xl p-4 flex items-center gap-4 shadow-sm">
+      <img
+        src="img56.jpeg"
+        alt="Rohit Dighore"
+        class="w-16 h-20 object-cover rounded-lg border"
+      />
+      <div class="text-left">
+        <h5 class="text-sm font-bold text-slate-900">
+          Mr. Pradumna fuke
+        </h5>
+        <p class="text-xs text-slate-500 mt-1">ES25026</p>
+      </div>
+    </div>
+
+     <div class="bg-white border border-slate-200 rounded-xl p-4 flex items-center gap-4 shadow-sm">
+      <img
+        src="img55.jpeg"
+        alt="Rohit Dighore"
+        class="w-16 h-20 object-cover rounded-lg border"
+      />
+      <div class="text-left">
+        <h5 class="text-sm font-bold text-slate-900">
+          Mr.Vedanshu Tembhare
+        </h5>
+        <p class="text-xs text-slate-500 mt-1">ES25023</p>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+      </div>
+    </section>
+
+    <!-- What is Smart Agriculture -->
+    <section id="about">
+      <div class="text-center max-w-2xl mx-auto mb-6">
+        <h2 class="text-2xl font-bold text-agrigreen-950">What is Smart Agriculture?</h2>
+        <p class="text-xs sm:text-sm text-slate-600 mt-1">
+          Smart Agriculture uses simple modern digital tools, scientific data, and precision practices to make farming more predictable, productive, and water-efficient.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- Digital Agriculture: Farmer with Mobile in Field -->
+        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-xs flex flex-col justify-between">
+          <img src="https://images.unsplash.com/photo-1595974482597-4b8da8879bc5?auto=format&fit=crop&w=600&q=80" alt="Digital Agriculture" class="w-full h-32 object-cover rounded-lg mb-3" />
+          <div>
+            <h3 class="text-sm font-bold text-slate-900">Digital Agriculture</h3>
+            <p class="text-xs text-slate-600 mt-1">Instant agricultural extension advisories, government subsidy notifications, and market prices delivered to smartphones.</p>
+          </div>
+        </div>
+
+        <!-- Weather Forewarning: Rain/Clouds over Field -->
+        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-xs flex flex-col justify-between">
+          <img src="https://images.unsplash.com/photo-1534088568595-a066f410bcda?auto=format&fit=crop&w=600&q=80" alt="Weather Forewarning" class="w-full h-32 object-cover rounded-lg mb-3" />
+          <div>
+            <h3 class="text-sm font-bold text-slate-900">Weather Forewarning</h3>
+            <p class="text-xs text-slate-600 mt-1">Accurate rainfall, humidity, and wind forecasting to plan sprays, fertilizer application, and harvesting.</p>
+          </div>
+        </div>
+
+        <!-- Smart Water & Drip: Drip Irrigation Piping -->
+        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-xs flex flex-col justify-between">
+          <img src="https://images.unsplash.com/photo-1563514227147-6d2ff665a6a0?auto=format&fit=crop&w=600&q=80" alt="Smart Water & Drip" class="w-full h-32 object-cover rounded-lg mb-3" />
+          <div>
+            <h3 class="text-sm font-bold text-slate-900">Smart Water & Drip</h3>
+            <p class="text-xs text-slate-600 mt-1">Providing water strictly to the root zone via micro-drip systems, reducing wastage up to 60%.</p>
+          </div>
+        </div>
+
+        <!-- Soil Health Testing: Soil Sample Testing -->
+        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-xs flex flex-col justify-between">
+          <img src="Soil_Health.jpg" alt="Soil Testing" class="w-full h-32 object-cover rounded-lg mb-3" />
+          <div>
+            <h3 class="text-sm font-bold text-slate-900">Soil Health Testing</h3>
+            <p class="text-xs text-slate-600 mt-1">Testing soil pH, organic carbon, and NPK levels prevents blind over-fertilization.</p>
+          </div>
+        </div>
+
+        <!-- Crop Health Scans: Lush Green Crop Aerial/Scan -->
+        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-xs flex flex-col justify-between">
+          <img src="Plantix.jpg" alt="Crop Health Scans" class="w-full h-32 object-cover rounded-lg mb-3" />
+          <div>
+            <h3 class="text-sm font-bold text-slate-900">Crop Health Scans</h3>
+            <p class="text-xs text-slate-600 mt-1">Satellite vegetation indices (NDVI) allow detecting crop stress or dry patches across large plots in minutes.</p>
+          </div>
+        </div>
+
+        <!-- Data-Backed Decisions: Farm Data / Dashboard -->
+        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-xs flex flex-col justify-between">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="Data-Backed Decisions" class="w-full h-32 object-cover rounded-lg mb-3" />
+          <div>
+            <h3 class="text-sm font-bold text-slate-900">Data-Backed Decisions</h3>
+            <p class="text-xs text-slate-600 mt-1">Tracking input costs and yield metrics digitally to evaluate true crop profitability.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7 Easy Steps to Start Smart Agriculture Today -->
+    <section id="steps" class="bg-white border border-slate-200 rounded-2xl p-6 shadow-xs">
+      <div class="text-center max-w-2xl mx-auto mb-8">
+        <span class="text-xs font-bold text-agrigreen-700 bg-agrigreen-100 px-3 py-1 rounded-full uppercase">Action Plan</span>
+        <h2 class="text-2xl font-bold text-agrigreen-950 mt-2">7 Easy Steps to Start Smart Agriculture Today</h2>
+        <p class="text-xs text-slate-600 mt-1">Practical sequential roadmap to modernize your land gradually without high risk.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <!-- Step 1: Soil in hands for testing -->
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex flex-col justify-between">
+          <a href="https://youtu.be/Zlje7e1AGFs?si=eH0oir9Z8IbybgNG" target="_blank" rel="noopener noreferrer">
+          <img src="Soil_Testing.jpg" alt="Soil Testing Step" class="w-full h-32 object-cover rounded-lg mb-3" />
+          </a>
+          <div class="flex-1">
+            <span class="text-xs font-extrabold text-agrigreen-700 bg-agrigreen-100 px-2 py-0.5 rounded">Step 01</span>
+            <h3 class="text-sm font-bold text-slate-900 mt-2">Soil Testing</h3>
+            <p class="text-xs text-slate-600 mt-1">Collect soil samples from 5 points on your farm and get a official Soil Health Card report.</p>
+          </div>
+        </div>
+
+        <!-- Step 2: Smartphone Agri App -->
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex flex-col justify-between">
+          <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=600&q=80" alt="Download Agri Apps" class="w-full h-32 object-cover rounded-lg mb-3" />
+          <div class="flex-1">
+            <span class="text-xs font-extrabold text-agrigreen-700 bg-agrigreen-100 px-2 py-0.5 rounded">Step 02</span>
+            <h3 class="text-sm font-bold text-slate-900 mt-2">Download Agri Apps</h3>
+            <p class="text-xs text-slate-600 mt-1">Install Plantix, Meghdoot (Weather), and Kisan Suvidha for instant alerts on smartphone.</p>
+          </div>
+        </div>
+
+        <!-- Step 3: Drip Pipe Line -->
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex flex-col justify-between">
+          <a href="https://youtu.be/RnrfS8YioSg?si=N59y7Q9Pauz5Upvl" target="_blank" rel="noopener noreferrer">
+          <img src="Drip_Irrigation.jpg" alt="Drip Irrigation Setup" class="w-full h-32 object-cover rounded-lg mb-3" />
+          </a>
+          <div class="flex-1">
+            <span class="text-xs font-extrabold text-agrigreen-700 bg-agrigreen-100 px-2 py-0.5 rounded">Step 03</span>
+            <h3 class="text-sm font-bold text-slate-900 mt-2">Drip Irrigation Setup</h3>
+            <p class="text-xs text-slate-600 mt-1">Apply for PMKSY subsidy and install targeted drip lines to save water and energy.</p>
+          </div>
+        </div>
+
+        <!-- Step 4: Compost Pile -->
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex flex-col justify-between">
+          <img src="Composting.jpg" alt="Start Organic Composting" class="w-full h-32 object-cover rounded-lg mb-3" />
+          <div class="flex-1">
+            <span class="text-xs font-extrabold text-agrigreen-700 bg-agrigreen-100 px-2 py-0.5 rounded">Step 04</span>
+            <h3 class="text-sm font-bold text-slate-900 mt-2">Organic Composting</h3>
+            <p class="text-xs text-slate-600 mt-1">Set up a vermicompost or NADEP pit using crop waste and cow dung to rebuild soil carbon.</p>
+          </div>
+        </div>
+
+        <!-- Step 5: Ladybug/Bio Pest Control -->
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex flex-col justify-between">
+          <a href="https://youtu.be/Uo05345F1C8?si=5CsHsvV6NodDmbPE" target="_blank" rel="noopener noreferrer">
+          <img src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&w=600&q=80" alt="Integrated Pest Management" class="w-full h-32 object-cover rounded-lg mb-3" />
+          </a>
+          <div class="flex-1">
+            <span class="text-xs font-extrabold text-agrigreen-700 bg-agrigreen-100 px-2 py-0.5 rounded">Step 05</span>
+            <h3 class="text-sm font-bold text-slate-900 mt-2">Integrated Pest Mgmt</h3>
+            <p class="text-xs text-slate-600 mt-1">Deploy yellow sticky traps and Neem spray early before chemical pest outbreaks occur.</p>
+          </div>
+        </div>
+
+        <!-- Step 6: Mulching / Straw Field -->
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex flex-col justify-between">
+          <a href="https://youtu.be/cPzVokK2fdc?si=DgjcmKhuEJdAZLAS" target="_blank" rel="noopener noreferrer">
+          <img src="Crop_rotation.jpg" alt="Crop Rotation & Mulching" class="w-full h-32 object-cover rounded-lg mb-3" />
+          </a>
+          <div class="flex-1">
+            <span class="text-xs font-extrabold text-agrigreen-700 bg-agrigreen-100 px-2 py-0.5 rounded">Step 06</span>
+            <h3 class="text-sm font-bold text-slate-900 mt-2">Rotation & Mulching</h3>
+            <p class="text-xs text-slate-600 mt-1">Cover soil beds with organic straw or plastic mulch to suppress weeds and lock in moisture.</p>
+          </div>
+        </div>
+
+        <!-- Step 7: Market Harvest Vegetables -->
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 flex flex-col sm:col-span-2 lg:col-span-2 justify-between">
+          <img src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=600&q=80" alt="Direct Market Linking" class="w-full h-32 object-cover rounded-lg mb-3" />
+          <div class="flex-1">
+            <span class="text-xs font-extrabold text-agrigreen-700 bg-agrigreen-100 px-2 py-0.5 rounded">Step 07</span>
+            <h3 class="text-sm font-bold text-slate-900 mt-2">Direct Market Linkage (e-NAM)</h3>
+            <p class="text-xs text-slate-600 mt-1">Register on e-NAM digital portal or join local FPOs to sell organic produce directly to buyers at higher rates.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Modern Smart Agri Toolkit -->
+    <section id="toolkit">
+      <div class="text-center max-w-2xl mx-auto mb-6">
+        <h2 class="text-2xl font-bold text-agrigreen-950">The Modern Smart Agri Toolkit</h2>
+        <p class="text-xs sm:text-sm text-slate-600 mt-1">Essential physical and digital tools modern farmers rely on for smart management.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- Kisan Spraying Drone: Real Agricultural Drone Spraying Field -->
+        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-xs flex flex-col justify-between">
+          <a href="https://eagletronicsindia.com/kisan-drone/?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer">
+          <img src="Precision_Bio-Spraying.jpg" alt="Kisan Spraying Drones" class="w-full h-32 object-cover rounded-lg mb-3" />
+          </a>
+          <div>
+            <h3 class="text-sm font-bold text-slate-900">Kisan Spraying Drones</h3>
+            <p class="text-xs text-slate-600 mt-1">Precision drone spraying covers 1 acre in under 7 minutes, cutting chemical waste by 30% and protecting health.</p>
+          </div>
+        </div>
+
+        <!-- IoT Soil Moisture Sensors: Technical Probe / Digital Equipment -->
+        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-xs flex flex-col justify-between">
+          <a href="https://youtu.be/zaw4yeYZfs0?si=78aWPsCVt6KrOtpk" target="_blank" rel="noopener noreferrer">
+          <img src="IoT_Soil.jpg" alt="IoT Soil Moisture Sensors" class="w-full h-32 object-cover rounded-lg mb-3" />
+          </a>
+          <div>
+            <h3 class="text-sm font-bold text-slate-900">IoT Soil Moisture Sensors</h3>
+            <p class="text-xs text-slate-600 mt-1">In-ground probes transmit moisture levels live to mobile apps, indicating exact irrigation timing.</p>
+          </div>
+        </div>
+
+        <!-- Solar Drip Controllers: Solar Panel in Farm Field -->
+        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-xs flex flex-col justify-between">
+          <img src="Solar_Drip_Controllers.jpg" alt="Solar Drip Controllers" class="w-full h-32 object-cover rounded-lg mb-3" />
+          <div>
+            <h3 class="text-sm font-bold text-slate-900">Solar Drip Controllers</h3>
+            <p class="text-xs text-slate-600 mt-1">Solar-powered automatic valves schedule water delivery during optimal morning or evening hours.</p>
+          </div>
+        </div>
+
+        <!-- Smart Agri Mobile Apps: Smartphone with Farm App -->
+        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-xs flex flex-col justify-between">
+          <a href="https://youtu.be/FvlFKOCffzw?si=9MV6vDopoQHAOvqo" target="_blank" rel="noopener noreferrer">
+            <img src="Plantix.jpg" alt="Smart Agri Mobile Apps" class="w-full h-32 object-cover rounded-lg mb-3" />
+          </a>
+          <div>
+            <h3 class="text-sm font-bold text-slate-900">Smart Agri Mobile Apps</h3>
+            <p class="text-xs text-slate-600 mt-1">Apps like Meghdoot & Plantix provide instant weather alerts, pest diagnosis, and mandi rate comparisons.</p>
+          </div>
+        </div>
+
+        <!-- Portable Soil Testing Kits: Soil Testing in Field -->
+        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-xs flex flex-col justify-between"> 
+          <a href="https://youtu.be/1v5O-fUUV-w?si=axdg209PeraVoXM0" target="_blank" rel="noopener noreferrer">
+            <img src="Portable_Soil.png" alt="Portable Soil Testing Kits" class="w-full h-32 object-cover rounded-lg mb-3" />
+          </a>
+          <div>
+            <h3 class="text-sm font-bold text-slate-900">Portable Soil Testing Kits</h3>
+            <p class="text-xs text-slate-600 mt-1">Handheld digital pH and NPK meters offer fast instant soil assessments right on the field.</p>
+          </div>
+        </div>
+
+        <!-- Bio-Inoculants & Organics: Bio Fertilizers / Green Leaves -->
+        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-xs flex flex-col justify-between">
+          <img src="https://images.unsplash.com/photo-1615811361523-6bd03d7748e7?auto=format&fit=crop&w=600&q=80" alt="Bio-Inoculants & Organics" class="w-full h-32 object-cover rounded-lg mb-3" />
+          <div>
+            <h3 class="text-sm font-bold text-slate-900">Bio-Inoculants & Organics</h3>
+            <p class="text-xs text-slate-600 mt-1">Liquid Azotobacter, Rhizobium, and Trichoderma cultures enrich soil microbial life without harsh chemicals.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Real, Practical Benefits for Indian Farmers -->
+    <section class="bg-agrigreen-950 text-white rounded-2xl p-6 sm:p-8">
+      <div class="text-center max-w-2xl mx-auto mb-6">
+        <span class="text-xs font-bold text-emerald-400 bg-emerald-900/50 px-3 py-1 rounded-full uppercase">Impact</span>
+        <h2 class="text-2xl font-bold mt-2">Real, Practical Benefits for Indian Farmers</h2>
+        <p class="text-xs sm:text-sm text-slate-300 mt-1">How combining technology and organic methods transforms farm economic security.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="bg-agrigreen-900/60 p-4 rounded-xl border border-agrigreen-800/80">
+          <div class="text-emerald-400 font-extrabold text-2xl mb-1">30% - 50%</div>
+          <h3 class="text-sm font-bold text-white">Input Cost Reduction</h3>
+          <p class="text-xs text-slate-300 mt-1">Targeted organic fertilizers and precision spraying significantly lower recurring chemical expenses.</p>
+        </div>
+
+        <div class="bg-agrigreen-900/60 p-4 rounded-xl border border-agrigreen-800/80">
+          <div class="text-emerald-400 font-extrabold text-2xl mb-1">Up to 60%</div>
+          <h3 class="text-sm font-bold text-white">Water Conservation</h3>
+          <p class="text-xs text-slate-300 mt-1">Drip irrigation and straw mulching keep water in root zones, reducing pumping electric costs.</p>
+        </div>
+
+        <div class="bg-agrigreen-900/60 p-4 rounded-xl border border-agrigreen-800/80">
+          <div class="text-emerald-400 font-extrabold text-2xl mb-1">20% - 35%</div>
+          <h3 class="text-sm font-bold text-white">Yield & Quality Rise</h3>
+          <p class="text-xs text-slate-300 mt-1">Healthy organic soil structure yields uniform crops that command premium prices in local markets.</p>
+        </div>
+
+        <div class="bg-agrigreen-900/60 p-4 rounded-xl border border-agrigreen-800/80">
+          <div class="text-emerald-400 font-extrabold text-2xl mb-1">Long-Term</div>
+          <h3 class="text-sm font-bold text-white">Soil Fertility Security</h3>
+          <p class="text-xs text-slate-300 mt-1">Prevents land salinity, restores beneficial earthworms, and preserves soil health for future generations.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Smart Tech + Organic Practices -->
+    <section class="bg-white border border-slate-200 rounded-2xl p-6 shadow-xs">
+      <div class="text-center max-w-2xl mx-auto mb-6">
+        <h2 class="text-2xl font-bold text-agrigreen-950">Smart Tech + Organic Practices</h2>
+        <p class="text-xs text-slate-600 mt-1">Combining modern tech with traditional organic wisdom yields maximum sustainability.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="p-4 rounded-xl bg-emerald-50/50 border border-emerald-100 flex items-start gap-3">
+          <img src="Precision_Bio-Spraying.jpg" alt="Precision Bio Spraying Drone" class="w-16 h-16 object-cover rounded-lg flex-shrink-0" />
+          <div>
+            <h3 class="text-xs font-bold text-slate-900">Precision Bio-Spraying</h3>
+            <p class="text-xs text-slate-600 mt-0.5">Use Kisan drones to evenly distribute biological pest controllers like Neem oil or Trichoderma with minimal waste.</p>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-xl bg-emerald-50/50 border border-emerald-100 flex items-start gap-3">
+          <img src="Moisture-Guided.jpg" alt="Drip Fertigation" class="w-16 h-16 object-cover rounded-lg flex-shrink-0" />
+          <div>
+            <h3 class="text-xs font-bold text-slate-900">Moisture-Guided Fertigation</h3>
+            <p class="text-xs text-slate-600 mt-1">Sensor data triggers drip systems to feed liquid Jeevamrut directly to plant roots at exact intervals.</p>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-xl bg-emerald-50/50 border border-emerald-100 flex items-start gap-3">
+          <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=200&q=80" alt="Plantix App Phone" class="w-16 h-16 object-cover rounded-lg flex-shrink-0" />
+          <div>
+            <h3 class="text-xs font-bold text-slate-900">AI Organic Pest Care</h3>
+            <p class="text-xs text-slate-600 mt-1">Scan early leaves with Plantix app to receive exact organic bio-pesticide dosage recipes before pests multiply.</p>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-xl bg-emerald-50/50 border border-emerald-100 flex items-start gap-3">
+          <img src="Satellite_Biomass.jpg" alt="Satellite Crop View" class="w-16 h-16 object-cover rounded-lg flex-shrink-0" />
+          <div>
+            <h3 class="text-xs font-bold text-slate-900">Satellite Biomass Tracking</h3>
+            <p class="text-xs text-slate-600 mt-1">Monitor organic mulch decomposition and crop nitrogen absorption over large acreage via free satellite imagery.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Government Farming Schemes -->
+    <section id="schemes" class="bg-white border border-slate-200 rounded-2xl p-6 shadow-xs">
+      <div class="mb-6">
+        <span class="text-xs font-bold text-agrigreen-700 bg-agrigreen-100 px-3 py-1 rounded-full uppercase">Financial & Technical Support</span>
+        <h2 class="text-2xl font-bold text-agrigreen-950 mt-2">Key Government Farming Schemes</h2>
+        <p class="text-xs text-slate-600 mt-1">Government welfare and subsidy schemes promoting Smart Agriculture & Organic Farming for farmers.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- Scheme 1 -->
+        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 flex flex-col justify-between">
+          <div>
+            <span class="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded">Organic Farming</span>
+            <h3 class="text-sm font-bold text-slate-900 mt-1">Paramparagat Krishi Vikas Yojana (PKVY)</h3>
+            <p class="text-xs text-slate-600 mt-1">Financial assistance of ₹50,000 per hectare for 3 years is provided for organic inputs, certification, and cluster formation.</p>
+          </div>
+          <a href="https://pgsindia-ncof.dac.gov.in" target="_blank" rel="noopener" class="mt-3 text-xs font-bold text-agrigreen-700 hover:underline inline-block">Apply / Learn More →</a>
+        </div>
+
+        <!-- Scheme 2 -->
+        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 flex flex-col justify-between">
+          <div>
+            <span class="text-[10px] font-bold text-blue-700 bg-blue-100 px-2 py-0.5 rounded">Smart Tech</span>
+            <h3 class="text-sm font-bold text-slate-900 mt-1">Digital Agriculture Mission</h3>
+            <p class="text-xs text-slate-600 mt-1">Supports AI, drones, satellite imagery, and Digital General Crop Estimation Surveys (DGCES) for modern data-driven farming.</p>
+          </div>
+          <a href="https://agricoop.gov.in" target="_blank" rel="noopener" class="mt-3 text-xs font-bold text-agrigreen-700 hover:underline inline-block">Learn More →</a>
+        </div>
+
+        <!-- Scheme 3 -->
+        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 flex flex-col justify-between">
+          <div>
+            <span class="text-[10px] font-bold text-purple-700 bg-purple-100 px-2 py-0.5 rounded">Mechanization & Drones</span>
+            <h3 class="text-sm font-bold text-slate-900 mt-1">Sub-Mission on Agricultural Mechanization (SMAM)</h3>
+            <p class="text-xs text-slate-600 mt-1">Financial assistance and subsidies for purchasing Kisan Drones, smart equipment, and establishing Custom Hiring Centers.</p>
+          </div>
+          <a href="https://agrimachinery.nic.in" target="_blank" rel="noopener" class="mt-3 text-xs font-bold text-agrigreen-700 hover:underline inline-block">Check Subsidy →</a>
+        </div>
+
+        <!-- Scheme 4 -->
+        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 flex flex-col justify-between">
+          <div>
+            <span class="text-[10px] font-bold text-amber-700 bg-amber-100 px-2 py-0.5 rounded">Soil Care</span>
+            <h3 class="text-sm font-bold text-slate-900 mt-1">Soil Health Card Scheme</h3>
+            <p class="text-xs text-slate-600 mt-1">Provides customized recommendations on nutrient dosage and organic soil amendments based on bi-annual soil testing.</p>
+          </div>
+          <a href="https://soilhealth.dac.gov.in" target="_blank" rel="noopener" class="mt-3 text-xs font-bold text-agrigreen-700 hover:underline inline-block">Find Testing Center →</a>
+        </div>
+
+        <!-- Scheme 5 -->
+        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 flex flex-col justify-between">
+          <div>
+            <span class="text-[10px] font-bold text-cyan-700 bg-cyan-100 px-2 py-0.5 rounded">Precision Water</span>
+            <h3 class="text-sm font-bold text-slate-900 mt-1">PM Krishi Sinchayee Yojana (Per Drop More Crop)</h3>
+            <p class="text-xs text-slate-600 mt-1">Offers up to 55%-80% subsidy on micro-irrigation tools like drip and sprinkler kits to conserve water.</p>
+          </div>
+          <a href="https://pmksy.gov.in" target="_blank" rel="noopener" class="mt-3 text-xs font-bold text-agrigreen-700 hover:underline inline-block">Apply for Drip Kit →</a>
+        </div>
+
+        <!-- Scheme 6 -->
+        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 flex flex-col justify-between">
+          <div>
+            <span class="text-[10px] font-bold text-agrigreen-700 bg-agrigreen-100 px-2 py-0.5 rounded">Financial Security</span>
+            <h3 class="text-sm font-bold text-slate-900 mt-1">PM-KISAN Samman Nidhi</h3>
+            <p class="text-xs text-slate-600 mt-1">Direct income support of ₹6,000 per year transferred directly to Aadhaar-linked farmer bank accounts.</p>
+          </div>
+          <a href="https://pmkisan.gov.in" target="_blank" rel="noopener" class="mt-3 text-xs font-bold text-agrigreen-700 hover:underline inline-block">Check Status →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8 Common Symptoms to Spot Early -->
+    <section class="bg-white border border-slate-200 rounded-2xl p-6 shadow-xs">
+      <div class="text-center max-w-2xl mx-auto mb-6">
+        <span class="text-xs font-bold text-agrigreen-700 bg-agrigreen-100 px-3 py-1 rounded-full uppercase">Crop Health</span>
+        <h2 class="text-2xl font-bold text-agrigreen-950 mt-2">8 Common Symptoms to Spot Early</h2>
+        <p class="text-xs text-slate-600 mt-1">Identify field issues early using real visual cues on leaves and roots.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <!-- 1: Real Yellow Autumn Leaf / Nitrogen Deficiency -->
+        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 flex flex-col justify-between">
+          <a href="https://youtu.be/L_GwPLL3Yfg?si=5BmN1H_XUPRb08s-" target="_blank" rel="noopener noreferrer">
+            <img src="Yellowing_Older.jpg" alt="Yellowing Older Leaves" class="w-full h-28 object-cover rounded-lg mb-2" />
+          </a>
+          <div>
+            <h3 class="text-xs font-bold text-slate-900">Yellowing Older Leaves</h3>
+            <p class="text-[11px] text-slate-500 mt-0.5">Deficiency of Nitrogen (N). Add organic compost or Jeevamrut.</p>
+          </div>
+        </div>
+
+        <!-- 2: Real Red/Purple Leaf Margins -->
+        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 flex flex-col justify-between">
+          <img src="Red_Leaf.jpg" alt="Purple or Reddish Leaf Margins" class="w-full h-28 object-cover rounded-lg mb-2" />
+          <div>
+            <h3 class="text-xs font-bold text-slate-900">Purple / Red Leaf Margins</h3>
+            <p class="text-[11px] text-slate-500 mt-0.5">Phosphorus (P) deficiency common in cold wet soils.</p>
+          </div>
+        </div>
+
+        <!-- 3: Burnt Brown Leaf Edges -->
+        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 flex flex-col justify-between">
+          <img src="Burnt_Curling.jpg" alt="Burnt & Curling Leaf Tips" class="w-full h-28 object-cover rounded-lg mb-2" />
+          <div>
+            <h3 class="text-xs font-bold text-slate-900">Burnt & Curling Tips</h3>
+            <p class="text-[11px] text-slate-500 mt-0.5">Potassium (K) shortage or salt build-up from over-watering.</p>
+          </div>
+        </div>
+
+        <!-- 4: White Powdery Spots on Leaf -->
+        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 flex flex-col justify-between">
+          <img src="White_Powdery.jpg" alt="White Powdery Spots" class="w-full h-28 object-cover rounded-lg mb-2" />
+          <div>
+            <h3 class="text-xs font-bold text-slate-900">White Powdery Spots</h3>
+            <p class="text-[11px] text-slate-500 mt-0.5">Powdery Mildew fungal infection. Spray diluted sour buttermilk/milk bio-solution.</p>
+          </div>
+        </div>
+
+        <!-- 5: Young Plant Shoot Stunted -->
+        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 flex flex-col justify-between">
+          <img src="Stunted_Young_Shoots.jpg" alt="Stunted Young Shoots" class="w-full h-28 object-cover rounded-lg mb-2" />
+          <div>
+            <h3 class="text-xs font-bold text-slate-900">Stunted Young Shoots</h3>
+            <p class="text-[11px] text-slate-500 mt-0.5">Zinc or Micronutrient lock in high pH soils. Apply bio-chelates.</p>
+          </div>
+        </div>
+
+        <!-- 6: Damaged/Chewed Leaf by Insects -->
+        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 flex flex-col justify-between">
+          <img src="Holes_in_Leaves.jpg" alt="Holes in Leaves" class="w-full h-28 object-cover rounded-lg mb-2" />
+          <div>
+            <h3 class="text-xs font-bold text-slate-900">Holes in Leaves</h3>
+            <p class="text-[11px] text-slate-500 mt-0.5">Caterpillars or armyworms. Apply Neem seed kernel extract (NSKE).</p>
+          </div>
+        </div>
+
+        <!-- 7: Wilting Plants/Roots -->
+        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 flex flex-col justify-between">
+          <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=600&q=80" alt="Wilting Wet Soil" class="w-full h-28 object-cover rounded-lg mb-2" />
+          <div>
+            <h3 class="text-xs font-bold text-slate-900">Wilting Wet Soil</h3>
+            <p class="text-[11px] text-slate-500 mt-0.5">Root rot or vascular wilt. Improve drainage and soil Trichoderma aeration.</p>
+          </div>
+        </div>
+
+        <!-- 8: Aphids / Small Pests on Stem -->
+        <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 flex flex-col justify-between">
+          <img src="sticky_leaves.jpg" alt="Sticky Leaves" class="w-full h-28 object-cover rounded-lg mb-2" />
+          <div>
+            <h3 class="text-xs font-bold text-slate-900">Sticky Leaves & Ants</h3>
+            <p class="text-[11px] text-slate-500 mt-0.5">Aphid or Mealybug honeydew secretion. Spray soap-water or Neem solution.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Tool: Plantix -->
+    <section id="plantix" class="bg-gradient-to-br from-agrigreen-900 to-emerald-950 text-white rounded-2xl p-6 sm:p-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+        <div class="lg:col-span-7 space-y-3">
+          <span class="px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-bold">🩺 Mobile Crop Doctor</span>
+          <h2 class="text-2xl font-bold">Meet Plantix — Mobile AI Crop Doctor</h2>
+          <p class="text-slate-300 text-xs sm:text-sm">
+            Plantix is a free agricultural smartphone application that uses Artificial Intelligence to diagnose crop diseases, pest attacks, and nutrient deficiencies directly from leaf photos.
+          </p>
+          <ul class="text-xs text-slate-200 space-y-1.5 pt-1">
+            <li class="flex items-center gap-2">✓ <strong>Instant Diagnosis:</strong> Snap a photo to detect fungal, bacterial, or pest attacks.</li>
+            <li class="flex items-center gap-2">✓ <strong>Organic Solutions:</strong> Receive organic treatments like Neem oil and Trichoderma dosage.</li>
+          </ul>
+        </div>
+        <div class="lg:col-span-5 bg-white text-slate-800 rounded-xl p-4 text-center border shadow-lg">
+          <img src="Plantix.jpg" alt="Plantix Crop Diagnosis" class="w-full h-36 object-cover rounded-lg mb-3" />
+          <h3 class="text-sm font-bold">Plantix Leaf Diagnosis</h3>
+          <p class="text-xs text-slate-500 my-2">Quickly identify crop symptoms before pest outbreaks spread across fields.</p>
+          <a href="https://plantix.net" target="_blank" rel="noopener" class="block w-full py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-lg text-xs">
+            Open Plantix Website →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Organic Farming Pillars -->
+    <section id="organic">
+      <div class="text-center max-w-2xl mx-auto mb-6">
+        <h2 class="text-2xl font-bold text-agrigreen-950">What is Organic Farming?</h2>
+        <p class="text-xs sm:text-sm text-slate-600 mt-1">
+          Organic farming avoids synthetic chemicals and relies on natural biological processes, compost, microbial biodiversity, and ecological crop rotation.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- Natural Soil Care: Rich dark soil -->
+        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-xs flex flex-col justify-between">
+          <img src="Natural_Soil_Care.jpg" alt="Natural Soil Care" class="w-full h-32 object-cover rounded-lg mb-3" />
+          <div>
+            <h3 class="text-xs font-bold text-slate-900">Natural Soil Care</h3>
+            <p class="text-[11px] text-slate-600 mt-1">Feeding soil biology with organic matter rather than quick chemical shots.</p>
+          </div>
+        </div>
+
+        <!-- Composting: Organic Compost Pile -->
+        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-xs flex flex-col justify-between">
+          <img src="Composting.jpg" alt="Composting" class="w-full h-32 object-cover rounded-lg mb-3" />
+          <div>
+            <h3 class="text-xs font-bold text-slate-900">Composting</h3>
+            <p class="text-[11px] text-slate-600 mt-1">Converting crop stalks, dry leaves, and cow dung into organic humus.</p>
+          </div>
+        </div>
+
+        <!-- Vermicomposting: Rich Bio-Humus / Earthworm Bed -->
+        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-xs flex flex-col justify-between">
+          <img src="Varmicomposed.jpg" alt="Vermicomposting" class="w-full h-32 object-cover rounded-lg mb-3" />
+          <div>
+            <h3 class="text-xs font-bold text-slate-900">Vermicomposting</h3>
+            <p class="text-[11px] text-slate-600 mt-1">Utilizing earthworms to convert organic residues into enzyme-rich vermicast.</p>
+          </div>
+        </div>
+
+        <!-- Crop Rotation: Alternating Field Rows -->
+        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-xs flex flex-col justify-between">
+          <img src="Crop_rotation.jpg" alt="Crop Rotation" class="w-full h-32 object-cover rounded-lg mb-3" />
+          <div>
+            <h3 class="text-xs font-bold text-slate-900">Crop Rotation</h3>
+            <p class="text-[11px] text-slate-600 mt-1">Alternating heavy feeders with legumes to fix atmospheric nitrogen naturally.</p>
+          </div>
+        </div>
+
+        <!-- Bio Pest Control: Natural Green Leaf Spray -->
+        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-xs flex flex-col justify-between">
+          <img src="Bio_Pest_Control.jpg" alt="Bio Pest Control" class="w-full h-32 object-cover rounded-lg mb-3" />
+          <div>
+            <h3 class="text-xs font-bold text-slate-900">Bio Pest Control</h3>
+            <p class="text-[11px] text-slate-600 mt-1">Using Neem oil, Dashparni Ark, and sticky traps without harming bees.</p>
+          </div>
+        </div>
+
+        <!-- Biodiversity Borders: Marigold/Flowers in Field -->
+        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-xs flex flex-col justify-between">
+          <img src="Biodiversity_Borders.jpg" alt="Biodiversity Borders" class="w-full h-32 object-cover rounded-lg mb-3" />
+          <div>
+            <h3 class="text-xs font-bold text-slate-900">Biodiversity Borders</h3>
+            <p class="text-[11px] text-slate-600 mt-1">Planting marigolds on farm borders to trap pests and nourish beneficial insects.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="mt-16 bg-slate-900 text-slate-300 pt-8 pb-6 border-t-4 border-agrigreen-600">
+    <div class="max-w-6xl mx-auto px-4 text-center sm:text-left">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pb-6 border-b border-slate-800">
+        <div class="flex items-center space-x-3">
+          <img src="logo.jpg" alt="Logo" class="h-8 w-auto object-contain" />
+          <span class="text-sm font-bold text-white">KITS SMART AGRICULTURAL & ORGANIC FARMING</span>
+        </div>
+        <p class="text-xs text-slate-400">Nandapuri Grampanchayat Initiative • KITS Ramtek</p>
+      </div>
+
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-slate-500 pt-4">
+        <p>© 2026 KITS Ramtek • Nandapuri Grampanchayat Community Engagement Project.</p>
+        <p>Guided by Prof. Anjali Narad Mam</p>
+      </div>
+    </div>
+  </footer>
+<script>
+  function toggleLanguageMenu() {
+    const menu = document.getElementById("languageMenu");
+    menu.classList.toggle("hidden");
+  }
+
+  function changeLanguage(language) {
+    const googleSelect = document.querySelector(".goog-te-combo");
+
+    if (!googleSelect) {
+      alert("Translation service is still loading. Please try again.");
+      return;
+    }
+
+    googleSelect.value = language;
+    googleSelect.dispatchEvent(new Event("change"));
+
+    document.getElementById("languageMenu").classList.add("hidden");
+  }
+
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      {
+        pageLanguage: "en",
+        includedLanguages: "en,hi,mr",
+        autoDisplay: false
+      },
+      "google_translate_element"
+    );
+  }
+</script>
+
+<!-- Hidden Google Translate Element -->
+<div id="google_translate_element" style="display:none;"></div>
+
+<script
+  type="text/javascript"
+  src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
+
+<style>
+  .language-option {
+    width: 100%;
+    text-align: left;
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #334155;
+    background: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  .language-option:hover {
+    background: #f0fdf4;
+    color: #15803d;
+  }
+</style>
+</body>
+</html>
